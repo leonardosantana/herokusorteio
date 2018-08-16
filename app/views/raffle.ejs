@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Your Luck!</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script>
+		function  enterRaffleClick(){
+			document.getElementById("raffleOption").style.display = "none";
+			document.getElementById("raffleCreate").style.display = "none";
+			document.getElementById("raffleEnter").style.display = "block";
+		}
+
+		function createRaffleClick(){
+			document.getElementById("raffleOption").style.display = "none";
+			document.getElementById("raffleEnter").style.display = "none";
+			document.getElementById("raffleCreate").style.display = "block";
+		}
+
+		function goBack(){
+			document.getElementById("raffleOption").style.display = "block";
+			document.getElementById("raffleEnter").style.display = "none";
+			document.getElementById("raffleCreate").style.display = "none";
+		}
+
+	</script>
+</head>
+
+<body>
+
+	<header>	
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<a class="navbar-brand" href="#">Good Lucky!</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+			</nav>
+	</header>
+	
+	<section>
+		Raffle
+		
+	</section>
+
+	<footer class="footer fixed-bottom" >
+		<div class="px-3 py-3 bg-dark text-white text-right">
+			<p>Copyright 2018 - Leonardo Sousa</p>
+		</div>
+	</footer>
+
+</body>
+
+</html>

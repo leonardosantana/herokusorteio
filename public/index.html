@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Your Luck!</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-primary">
+            <a class="navbar-brand" href="#">Good Lucky!</a>
+            <button id="btn-create-raffle" class="btn btn-primary btn-lg" onclick="createRaffle()">Create Raffle</button>
+        </nav>
+    </header>
+    <section>
+        <div id="raffle" class="container py-3 my-2" style="display:none;">
+            <div class="row">
+                <div class="col-sm-4 card text-white bg-info mb-3 py-3">
+                    <h1 id="raffle-id">Raffle ID</h1>
+                    <button class="btn btn-primary btn-lg btn-block" id="btn-winner-raffle" onclick="sortWinner()">Raffle</button>
+                </div>
+                <div class="col-sm-8  py-3 my-2">
+                    <h1 class="list-group list-group-flush  py-3 my-2">Participants</h1>
+                    <ol class="list-group list-group-flush  py-3 my-2" id="raffle-users"></ol>
+                </div>
+            </div>
+        </div>
+        <div id="enter-one-raffle" class="container py-3 my-3">
+            <h1 id="raffle-entered-result" class="card-title">Enter raffle id</h1>
+            <div class="px-3 py-3">
+                <form>
+                    <div class="form-group row">
+                        <label for="ipt-enter-raffle" class="col-sm-3 col-form-label text-right">Enter raffle id</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control inactive" id="ipt-enter-raffle">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="ipt-user-name" class="col-sm-3 col-form-label text-right">Enter user name</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control inactive" id="ipt-user-name">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <button id="btn-enter-raffle" class="btn btn-primary btn-lg btn-block" onclick="enterRaffle()">Enter</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="footer fixed-bottom">
+        <div class="px-3 py-3 bg-dark text-white text-right">
+            <p>Copyright 2018 - Leonardo Sousa</p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
