@@ -66,8 +66,6 @@ io.on('connection', (socket) => {
                 io.to(raffle.id).emit('enteredRaffle', raffleUsers );
                 io.to(socket.id).emit('enteredRaffleUser');
             }
-
-
         }
     });
 

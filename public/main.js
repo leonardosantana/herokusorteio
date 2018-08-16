@@ -96,6 +96,7 @@ socket.on('raffleNotFound', (data) => {
 
     $("#enter-one-raffle").show();
     $("#raffle").hide();
+    $("#btn-enter-raffle").prop("disabled", false);
 
     $("h1#raffle-entered-result").empty().html('This raffle doesnt exists');
 });
